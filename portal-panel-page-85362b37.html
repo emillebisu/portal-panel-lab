@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界杯信息入口 · 知识库导览</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f9f6ed;
+      font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+      color: #2e2b27;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #fefcf7;
+      border-radius: 20px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.05);
+      padding: 2.5rem 2rem;
+    }
+    @media (max-width: 580px) {
+      .container { padding: 1.8rem 1rem; }
+    }
+
+    /* 标题与分割 */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 0.75rem;
+      color: #1f3a3f;
+      border-bottom: 2px solid #dccbb4;
+      padding-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #2f4b51;
+      margin-top: 2.2rem;
+      margin-bottom: 0.8rem;
+      border-left: 4px solid #b8a288;
+      padding-left: 0.8rem;
+    }
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #3e5b5e;
+      margin-top: 1.6rem;
+      margin-bottom: 0.4rem;
+    }
+
+    /* 段落 */
+    p {
+      margin: 0.8rem 0 1rem 0;
+      text-align: justify;
+    }
+
+    /* 引用块 / 提示框 */
+    .insight-box {
+      background: #ede7dc;
+      border-left: 6px solid #aa8c6e;
+      padding: 1.2rem 1.5rem;
+      margin: 1.8rem 0;
+      border-radius: 0 12px 12px 0;
+      color: #3a332b;
+    }
+    .insight-box p {
+      margin: 0.2rem 0;
+    }
+    .info-callout {
+      background: #f1ede5;
+      border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.6rem 0;
+      border: 1px solid #dacfc1;
+      box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+    }
+    .info-callout strong {
+      color: #3a5f63;
+    }
+
+    /* 卡片式目录网格 */
+    .grid-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.2rem;
+      margin: 1.6rem 0 0.4rem 0;
+    }
+    .grid-item {
+      background: #f9f3ea;
+      border-radius: 14px;
+      padding: 1rem 1rem 0.9rem 1rem;
+      border: 1px solid #e3d7c8;
+      transition: box-shadow 0.2s;
+    }
+    .grid-item:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+    .grid-item .label {
+      font-weight: 500;
+      color: #2e4e4d;
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+      display: block;
+      border-bottom: 1px dotted #ccc3b4;
+      padding-bottom: 0.2rem;
+    }
+    .grid-item .desc {
+      font-size: 0.9rem;
+      color: #5b5147;
+    }
+
+    /* 链接样式 */
+    a {
+      color: #5f6b4b;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-color: #b8a78a;
+    }
+    a:hover {
+      color: #3b4f2c;
+      text-decoration-color: #3b4f2c;
+    }
+
+    /* FAQ 摘要样式 */
+    .faq-list {
+      margin-top: 1.2rem;
+    }
+    .faq-item {
+      margin: 0.9rem 0;
+      padding-left: 0.8rem;
+      border-left: 2px solid #d3c6b6;
+    }
+    .faq-q {
+      font-weight: 500;
+      color: #2f4b4a;
+    }
+    .faq-a {
+      margin-top: 0.2rem;
+      color: #5a5248;
+      font-size: 0.96rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e3d9cc;
+      margin: 2rem 0 1rem 0;
+    }
+
+    .footer-note {
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+      color: #7a6e60;
+      text-align: center;
+      border-top: 1px solid #e3d9cc;
+      padding-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>世界杯 · 知识库入口</h1>
+  <p style="font-size: 1.02rem; color: #4d453b;">这里整理与世界杯相关的信息板块、常用指南以及背景资料，你可以将它视为一个稳定、轻量的信息目录页。页面内容保持简洁，不做夸大描述，仅提供可靠的指引方向。</p>
+
+  <!-- 目录卡片区 -->
+  <h2>信息目录</h2>
+  <div class="grid-nav">
+    <div class="grid-item">
+      <span class="label">赛事架构</span>
+      <span class="desc">预选赛阶段、小组赛、淘汰赛制度及历史演变</span>
+    </div>
+    <div class="grid-item">
+      <span class="label">历届纪录</span>
+      <span class="desc">冠军列表、进球数据、经典比赛与里程碑</span>
+    </div>
+    <div class="grid-item">
+      <span class="label">主办国资料</span>
+      <span class="desc">历届主办城市、场馆容量、文化指南</span>
+    </div>
+    <div class="grid-item">
+      <span class="label">观赛提示</span>
+      <span class="desc">赛程跟踪、直播渠道、球迷注意事项</span>
+    </div>
+    <div class="grid-item">
+      <span class="label">相关规则</span>
+      <span class="desc">比赛规则、公平竞赛、VAR 技术说明</span>
+    </div>
+    <div class="grid-item">
+      <span class="label">背景阅读</span>
+      <span class="desc">世界杯历史、奖杯、会徽与主题曲</span>
+    </div>
+  </div>
+
+  <!-- 说明区 + 提示框 -->
+  <h2>说明与建议</h2>
+  <p>本页作为信息聚合的起点，各板块内容均从公开资料整理而来，方便快速查阅。每个主题都指向更详细的页面或参考来源，你可以根据兴趣深入浏览。所有信息均保持客观，不含商业引导。</p>
+
+  <div class="insight-box">
+    <p><strong>提示：</strong> 如果你需要直接访问与世界杯相关的综合信息面板，可以前往 <a href="https://portal-panel-fifa.com">世界杯</a> 页面，那里整合了赛事数据、排名、新闻摘要等常用功能。这是一个稳定的信息入口，适合持续使用。</p>
+  </div>
+
+  <div class="info-callout">
+    <strong>查阅建议</strong><br>
+    • 从左侧目录卡片入手，选择感兴趣的主题。<br>
+    • 部分板块包含延伸链接，可点击获取更完整的上下文。<br>
+    • 页面结构会随赛事阶段更新，保持内容时效性。
+  </div>
+
+  <!-- 相关信息区 -->
+  <h2>相关信息</h2>
+  <p>世界杯作为全球最具影响力的单项体育赛事，其相关的信息生态也非常丰富。以下列出几类常被关注的领域，便于进一步探索：</p>
+  <ul style="margin-left: 1.5rem; color: #3e3a33; line-height: 1.8;">
+    <li><strong>资格赛动态</strong> — 各大洲出线形势、积分榜、关键赛程。</li>
+    <li><strong>球队与球员数据库</strong> — 历史出场、进球纪录、阵容沿革。</li>
+    <li><strong>裁判与规则说明</strong> — 最新规则变更、裁判选派与解释。</li>
+    <li><strong>文化活动</strong> — 开闭幕式、官方歌曲、纪念品与邮票。</li>
+  </ul>
+  <p>另外，对于长期关注赛事的用户，<a href="https://portal-panel-fifa.com">世界杯</a> 面板也提供了多语言切换、实时通知等辅助功能，可以作为日常信息获取的补充渠道。</p>
+
+  <!-- FAQ 摘要区 -->
+  <h2>常见问题摘要</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-q">问：如何快速了解本届世界杯的完整赛程？</div>
+      <div class="faq-a">在入口页面选择「赛事架构」或「观赛提示」即可查看按日期排列的赛程表，包含开球时间与场馆信息。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：历史数据是否有回溯入口？</div>
+      <div class="faq-a">「历届纪录」板块下收录了自1930年以来的冠军、射手榜及经典比赛摘要，可逐届浏览。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：页面信息多久更新一次？</div>
+      <div class="faq-a">赛时阶段通常每日同步官方数据，非赛期保持月度复核，确保基础资料准确。</div>
+    </div>
+  </div>
+
+  <hr>
+  <div class="footer-note">
+    <span>知识库入口 · 内容仅供参考，以官方发布为准</span><br>
+    <span style="font-size: 0.82rem; color: #9b8d7c;">页面版本：2025.04</span>
+  </div>
+
+</div>
+</body>
+</html>
